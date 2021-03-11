@@ -8,9 +8,9 @@ if(isset($_POST['submit'])){
         $error = "The information that you have submitted are not enough!";
         include "./views/login.view.php";
     }else{
-
         // get user data from database
         $userData = (object)[];
+        $userData->id = 1;
         $userData->name = "Abby";
         $userData->email = "abby@email.com";
         $userData->password = password_hash("1234",PASSWORD_DEFAULT);
@@ -19,20 +19,19 @@ if(isset($_POST['submit'])){
         if(password_verify($password,$userData->password)){
             // check if remember me is checked
             if(isset($_POST['rememberme'])){
-                // generate token
-                    $token = password_hash("loggendin",PASSWORD_DEFAULT);
-                // set login cookie
-                    $key = "rem";
-                    $val = $token;
+                
+                // Set login cookie
+                    $key = "token";
+                    $val = generateToken($userData->id);
                     $exp = time() + 86400 * 30;
                     setcookie($key,$val,$exp);
             }
-            // set login session
-            session_start();
-            $_SESSION['logged'] = 1;
-            $_SESSION['name'] = $userData->name;
-            // get home page
-            include "./views/home.view.php";
+            // Set login session
+                session_start();
+                $_SESSION['logged'] = 1;
+                $_SESSION['id'] = 1;
+                // Got to home page
+                header("location: ./");
         }else{
             $error = "That's not your password, please resubmit your correct password";
             include "./views/login.view.php";

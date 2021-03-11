@@ -1,14 +1,25 @@
 <?php
 include './router/Router.php';
 include './router/Request.php';
-
+include './functions/functions.php';
 $router = new Router(new Request());
-
-
+// home
 $router->get("/", function ($request) {
+    // check for auth
+    include "./middleware/auth.middleware.php";
+    // get home controller
     include "./controllers/home.controller.php";
 });
-$router->get("/route", function ($request) {
+
+// contact
+$router->get("/contact", function ($request) {
+    // check for auth
+    include "./middleware/auth.middleware.php";
+    // get home controller
+    // include "./controllers/contact.controller.php";
+});
+$router->get("/route/:id",function ($request) {
+
     echo "from another route";
 });
 $router->post("/route", function ($request) {
