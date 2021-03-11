@@ -14,3 +14,12 @@ $router->get("/route", function ($request) {
 $router->post("/route", function ($request) {
     echo "from another route";
 });
+
+
+// login routs
+$router->get("/login", function ($request) {
+    include "./controllers/login.controller.php";
+});
+$router->post("/login", function ($request) {
+    include "./controllers/login.controller.php";
+});
