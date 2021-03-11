@@ -1,3 +1,3 @@
 <?php
 
-echo "from model <br>";
+// echo "from model <br>";
