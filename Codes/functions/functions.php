@@ -17,7 +17,12 @@ function getUserMac(){
 // get & decript token
 function fetchToken($token){
 
-    return json_decode($token);
+    $MAC = getUserMac();
+    $data = Array(
+        "id" => 1,
+        "mac" => $MAC
+    );
+    return $data;
 }
 // set token
 function generateToken($id){
