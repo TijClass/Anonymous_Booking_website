@@ -1,5 +1,5 @@
 <?php
-
+use \Firebase\JWT\JWT;
 function getUserMac(){
     $cmd = "arp -a " . $_SERVER['REMOTE_ADDR'];
     $status = 0;
@@ -27,6 +27,5 @@ function generateToken($id){
         "id" => $id,
         "mac" => $MAC
     );
-    return json_encode($token);
-    
+    return JWT::encode($token, $tokenSecret);    
 }

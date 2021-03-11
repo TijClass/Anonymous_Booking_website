@@ -24,6 +24,8 @@ if(isset($_POST['submit'])){
                     $key = "token";
                     $val = generateToken($userData->id);
                     $exp = time() + 86400 * 30;
+                    // echo $val;
+                    // die;
                     setcookie($key,$val,$exp);
             }
             // Set login session
