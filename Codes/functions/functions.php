@@ -34,3 +34,9 @@ function generateToken($id){
     );
     return JWT::encode($token, TOKEN_SECRET);    
 }
+
+// get time stamp
+function getTimstamp(){
+    $date = new DateTime();
+    return $date->getTimestamp();
+}

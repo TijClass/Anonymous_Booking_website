@@ -65,12 +65,13 @@ class Agent{
     // save agent data to database
     public function save(){
         $con = new DB();
-        $con->prepare("UPDATE agents SET `name`= :name, `email`= :email, `images_id`= :images_id, `score`= :score, WHERE `id`= :id");
+        $con->prepare("UPDATE agents SET `name`= :name, `email`= :email, `images_id`= :images_id, `score`= :score,`updated_at`=:updatedAt WHERE `id`= :id");
         $con->bindParam(":id",$this->id,"INT");
         $con->bindParam(":name",$this->name,"STR");
         $con->bindParam(":email",$this->email,"STR");
         $con->bindParam(":images_id",$this->images_id,"STR");
         $con->bindParam(":score",$this->score,"INT");
+        $con->bindParam(":updated_at",getTimstamp(),"INT");
         if($con->execute()){
             return true;
         }else{
