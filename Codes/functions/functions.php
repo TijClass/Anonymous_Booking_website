@@ -34,3 +34,11 @@ function generateToken($id){
     );
     return JWT::encode($token, TOKEN_SECRET);    
 }
+function generateId(){
+    $min = pow(10,6);
+    $max = pow(10,10);
+    $timeStampHex = dechex(time());
+    $firstRandomHex = dechex(rand($min,$max));
+    $secondRandomHex = dechex(rand($min,$max));
+    return $timeStampHex."-".$firstRandomHex."-".$secondRandomHex;
+}
