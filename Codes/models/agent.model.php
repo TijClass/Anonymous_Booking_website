@@ -12,12 +12,18 @@ class Agent{
     private $updated_at;
 
     public function __construct(){
-        
     }
-
-
-
-
+    // get Top 3 agents
+    public function getTop3(){
+        $con = new DB();
+        $con->prepare("SELECT name,images_id FROM agents ORDER BY score DESC LIMIT 3");
+        if($con->execute()){
+            $agent = $con->fetchAll("OBJ"); 
+            return $agent;
+        }else{
+            return false;
+        }
+    }
     // get Agent
     public function getAgent($id){
         $con = new DB();

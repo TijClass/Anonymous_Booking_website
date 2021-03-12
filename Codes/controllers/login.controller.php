@@ -21,7 +21,6 @@ if(isset($_POST['submit'])){
         $userData->password = $Agent->getPassword();
         // verify password if a user found
         if(password_verify($password,$userData->password)){
-
             //generate a token to send it with the response 
             $key = "token";
             $token = generateToken($userData->id);
