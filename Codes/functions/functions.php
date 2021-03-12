@@ -32,5 +32,5 @@ function generateToken($id){
         "id" => $id,
         "mac" => $MAC
     );
-    return JWT::encode($token, $tokenSecret);    
+    return JWT::encode($token, TOKEN_SECRET);    
 }
