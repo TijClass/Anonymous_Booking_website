@@ -71,7 +71,7 @@ class Agent{
         $con->bindParam(":email",$this->email,"STR");
         $con->bindParam(":images_id",$this->images_id,"STR");
         $con->bindParam(":score",$this->score,"INT");
-        $con->bindParam(":updated_at",getTimstamp(),"INT");
+        $con->bindParam(":updated_at",getCurrentTimestamp(),"STR");
         if($con->execute()){
             return true;
         }else{

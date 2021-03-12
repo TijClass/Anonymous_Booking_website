@@ -36,9 +36,8 @@ function generateToken($id){
 }
 
 // get time stamp
-function getTimstamp(){
-    $date = new DateTime();
-    return $date->getTimestamp();
+function getCurrentTimestamp(){
+    return date("Y-m-d h:i:s");
 }
 function generateId(){
     $min = pow(10,6);
