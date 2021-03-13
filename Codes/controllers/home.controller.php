@@ -14,18 +14,8 @@ $Partner = new Partner(); // Feature
 
 $top3Agents = $agent->getTop3(); // get Top 3 agents
 $homes = $hom->all(); // get all homes
-$features = $Feature->get(1);
+$features = $Feature->all();
 $partner = $Partner->all();
-
-echo "<pre>";
-// print_r($top3Agents);
-// echo "<br>";
-// print_r($homes);
-// echo "<br>";
-// print_r($features);
-// echo "<br>";
-print_r($partner);
-echo "</pre>";
 
 
 // get home view
