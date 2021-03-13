@@ -106,7 +106,7 @@ class Feature{
             $con->bindParam(":icon",$this->icon,"STR");
             $con->bindParam(":title",$this->title,"STR");
             $con->bindParam(":description",$this->description,"STR");
-            $con->bindParam(":updatedAt",$this->updatedAt,"STR");
+            $con->bindParam(":updatedAt",getCurrentTimestamp(),"STR");
             if($con->execute()){
                 return true;
             }else{
