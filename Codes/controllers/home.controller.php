@@ -1,7 +1,9 @@
 <?php
-// echo "from controller <br>";
-include "./models/home.model.php";
-require "./models/agent.model.php";
+require "./models/images.model.php";
+include "./models/home.model.php"; // home model
+require "./models/agent.model.php"; // agent model
+
+// get home view
 include "./views/home.view.php";
 
 
@@ -12,6 +14,8 @@ $hom = new Home(); // Home
 $top3Agents = $agent->getTop3(); // get Top 3 agents
 $homes = $hom->all(); // get all homes
 
-print_r($top3Agents);
-echo "<br>";
+echo "<pre>";
+// print_r($top3Agents);
+// echo "<br>";
 print_r($homes);
+echo "</pre>";

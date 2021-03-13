@@ -17,26 +17,26 @@ class Home{
     public function __construct(){
 
     }
-
     // Get single home
     public function get($id){
+        // echo "dsc";
         $con = new DB();
+        $Images = new Images();
         $con->prepare("SELECT * FROM homes WHERE id=:id LIMIT 1");
         $con->bindParam(":id",$id,"INT");
         if($con->execute()){
             $Home = $con->fetchAll("OBJ")[0]; 
-            $this->$id = $Home->id;
-            $this->$id = $Home->id ;
-            $this->$thumbnail_id = $Home->thumbnail_id ;
-            $this->$adress = $Home->adress ;
-            $this->$rooms = $Home->rooms ;
-            $this->$surface = $Home->surface ;
-            $this->$price = $Home->price ;
-            $this->$title = $Home->title ;
-            $this->$images_id = $Home->images_id ;
-            $this->$agent_id = $Home->agent_id ;
-            $this->$created_at = $Home->created_at ;
-            $this->$updated_at = $Home->updated_at ;
+            $this->id = $Home->id;
+            $this->thumbnail = $Images->get($Home->thumbnail_id);
+            $this->adress = $Home->adress;
+            $this->rooms = $Home->rooms;
+            $this->surface = $Home->surface;
+            $this->price = $Home->price;
+            $this->title = $Home->title;
+            $this->images = $Images->all($Home->images_id);
+            $this->agent_id = $Home->agent_id;
+            $this->created_at = $Home->created_at;
+            $this->updated_at = $Home->updated_at;
         }else{
             return false;
         }
@@ -45,9 +45,15 @@ class Home{
     // Get all homes
     public function all(){
         $con = new DB();
+        $Images = new Images();
         $con->prepare("SELECT * FROM homes");
         if($con->execute()){
-            $Homes = $con->fetchAll("OBJ"); 
+            $Homes = $con->fetchAll("OBJ");
+            foreach($Homes as $key => $home){
+                $Homes[$key]->thumbnail = $Images->get($home->thumbnail_id);
+                // $Homes[$key]->images = $Images->all($home->images_id);
+                unset($Homes[$key]->thumbnail_id);
+            }
             return $Homes;
         }else{
             return false;
