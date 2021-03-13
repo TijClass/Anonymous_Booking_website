@@ -19,8 +19,14 @@ class Feature{
         $con->prepare("SELECT * FROM features WHERE id=:id");
         $con->bindParam("id",$id,"INT");
         if($con->execute()){
-            $Images = $con->fetchAll("OBJ")[0];
-            return $Images;
+            $feature = $con->fetchAll("OBJ")[0];
+            $this->id = $feature->id;
+            $this->icon = $feature->icon;
+            $this->title = $feature->title;
+            $this->description = $feature->description;
+            $this->createdAt = $feature->created_at;
+            $this->updatedAt = $feature->updated_at;
+            return $feature;
         }else{
             return false;
         }
