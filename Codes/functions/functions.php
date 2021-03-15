@@ -17,7 +17,12 @@ function getUserMac(){
 // get & decript token
 function fetchToken($token){
 
-    return json_decode($token);
+    $MAC = getUserMac();
+    $data = Array(
+        "id" => 1,
+        "mac" => $MAC
+    );
+    return $data;
 }
 // set token
 function generateToken($id){
@@ -27,5 +32,18 @@ function generateToken($id){
         "id" => $id,
         "mac" => $MAC
     );
-    return JWT::encode($token, $tokenSecret);    
+    return JWT::encode($token, TOKEN_SECRET);    
+}
+
+// get time stamp
+function getCurrentTimestamp(){
+    return date("Y-m-d h:i:s");
+}
+function generateId(){
+    $min = pow(10,6);
+    $max = pow(10,10);
+    $timeStampHex = dechex(time());
+    $firstRandomHex = dechex(rand($min,$max));
+    $secondRandomHex = dechex(rand($min,$max));
+    return $timeStampHex."-".$firstRandomHex."-".$secondRandomHex;
 }

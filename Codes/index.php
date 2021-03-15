@@ -2,7 +2,8 @@
 include './router/Router.php';
 include './router/Request.php';
 include './functions/functions.php';
-include './.env/values.php';
+include './.env/.values.php';
+include './functions/database.php';
 require __DIR__ . '/vendor/autoload.php';
 $router = new Router(new Request());
 // home
