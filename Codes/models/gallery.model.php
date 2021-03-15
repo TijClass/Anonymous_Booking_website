@@ -52,10 +52,14 @@ class Gallery {
     function getImage(){
         return $this->image_id;
     }
-    
-    function setId($id){
-        $this->id = $id;
+    function getCreatedAt(){
+        return $this->created_at;
     }
+    function getUpdatedAt(){
+        return $this->updated_at;
+    }
+
+    
     function setImage($image_id){
         $this->image_id = $image_id;
     }
