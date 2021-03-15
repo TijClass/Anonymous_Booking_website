@@ -9,7 +9,7 @@ $router = new Router(new Request());
 // home
 $router->get("/", function ($request) {
     // check for auth
-    include "./middleware/auth.middleware.php";
+    // include "./middleware/auth.middleware.php";
     // get home controller
     include "./controllers/home.controller.php";
 });
@@ -17,7 +17,7 @@ $router->get("/", function ($request) {
 // contact
 $router->get("/contact", function ($request) {
     // check for auth
-    include "./middleware/auth.middleware.php";
+    // include "./middleware/auth.middleware.php";
     // get home controller
     // include "./controllers/contact.controller.php";
 });
