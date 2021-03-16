@@ -16,13 +16,7 @@ function getUserMac(){
 
 // get & decript token
 function fetchToken($token){
-
-    $MAC = getUserMac();
-    $data = Array(
-        "id" => 1,
-        "mac" => $MAC
-    );
-    return $data;
+    return JWT::decode($token, TOKEN_SECRET, array('HS256'));;
 }
 // set token
 function generateToken($id){
