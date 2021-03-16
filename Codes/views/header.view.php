@@ -1,7 +1,7 @@
 
 <header>
 <div class="nav">
-<img src="./imgs/logo.svg">
+<img src="../imgs/logo.svg">
 <ul>
 <li>la maison des réves</li>
 <li>Proposition</li>
@@ -27,15 +27,15 @@ consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolo
 </div>
 <div>
 <div>
-<img src="./imgs/old.jpg" alt="">
+<img src="../imgs/old.jpg" alt="">
 <h4>Name Agent</h4>
 </div>
 <div>
-<img src="./imgs/girl.jpg" alt="">
+<img src="../imgs/girl.jpg" alt="">
 <h4>Name Agent</h4>
 </div>
 <div>
-<img src="./imgs/adult.jpg" alt="">
+<img src="../imgs/adult.jpg" alt="">
 <h4>Name Agent</h4>
 </div>
 
