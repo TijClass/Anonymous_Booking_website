@@ -1,4 +1,4 @@
-*,
+/* *,
 *::after,
 *::before {
   margin: 0;
@@ -60,4 +60,4 @@ body {
 
 .footer {
   background-color: salmon;
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end; } */

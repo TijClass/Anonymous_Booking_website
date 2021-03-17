@@ -1,15 +1,16 @@
 
 <header>
+<div class="container">
 <div class="nav">
-<img src="../imgs/logo.svg">
-<ul>
-<li>la maison des réves</li>
-<li>Proposition</li>
-<li>Plan</li>
-<li>Soumettez votre propriété</li>
-<li>Nous rejoindre</li>
-<li>Contactez-nous</li>
-</ul>
+  <span><img src="/imgs/logo.svg" class="logo"></span>
+  <ul class="menu">
+    <li>la maison des réves</li>
+    <li>Proposition</li>
+    <li>Plan</li>
+    <li>Soumettez votre propriété</li>
+    <li>Nous rejoindre</li>
+    <li>Contactez-nous</li>
+  </ul>
 </div>
 <div>
 <h1 style="color:#ffcf2f" text-align="center">la maison des réves</h1>
@@ -27,21 +28,22 @@ consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolo
 </div>
 <div>
 <div>
-<img src="../imgs/old.jpg" alt="">
+<img src="/imgs/old.jpg" alt="">
 <h4>Name Agent</h4>
 </div>
 <div>
-<img src="../imgs/girl.jpg" alt="">
+<img src="/imgs/girl.jpg" alt="">
 <h4>Name Agent</h4>
 </div>
 <div>
-<img src="../imgs/adult.jpg" alt="">
+<img src="/imgs/adult.jpg" alt="">
 <h4>Name Agent</h4>
 </div>
 
 
 </div>
 
+</div>
 
 </div>
 </header>

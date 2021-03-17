@@ -1,5 +1,20 @@
+.homes1{
+    .container1{
+        background-image: url(../imgs/img-carte.png);
+        background-repeat: no-repeat;
+        height: 300px;
+        width: 450px;
+        margin: 42px;
+        .visibel1{
+            .title-seconde{
+                font-size: 28px;
+                color: #FFFFFF;
+            }
+            i{
+                color: #FFFFFF;
+            }
 
-.homes {
-    background-color:red;
-    grid-column: center-start / center-end;
+        }
+        
+    }
 }

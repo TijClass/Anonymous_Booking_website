@@ -1,7 +1,7 @@
 {
   "name": "booking",
   "version": "1.0.0",
-  "description": "",
+  "description": "booking app",
   "main": "index.js",
   "scripts": {
     "Mode-production": "==============Branch Prod==============",
