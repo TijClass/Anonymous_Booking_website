@@ -1,8 +1,12 @@
+$maincolor:#f9b90f;
+$buttonColor:#4aa4ff;
+$fontFam: 'Poppins', sans-serif;
 
 
 body{
   margin: 0%;
   padding: 0%;
+  font-family: $fontFam;
 }
 *{
   
@@ -14,32 +18,37 @@ html{
 }
 header{ 
     width: 100%;
-    height: auto;
+    height: 100vh;
     // grid-column: full-start / col-end 6;
     background-image: url('../imgs/house.png');
     background-repeat: no-repeat;
     background-size: cover;
-    // position: relative;
+    position: relative;
+    color: white;
     }
     // header:hover{
     //   color:#0D2843;
+    //   position: absolute;
      
     // }
-  //   header::before {    
-  //     content: "";
-  //     position: absolute;
-  //     top: 0px;
-  //     right: 0px;
-  //     bottom: 0px;
-  //     left: 0px;
-  //     background-color: rgba(0,0,0,0.8);
+    header::before {    
+      content: "";
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      background-color: rgba(0,0,0,0.8);
      
-  // }
+  }
   .container{
     width:80%;
+    height:100%;
    margin: 0% auto;
    display: flex;
    flex-direction: column;
+   justify-content: space-between;
+   position: relative;
    
   }
   .nav{
@@ -62,19 +71,65 @@ header{
     }
 .menu{
   // display: inline;
-  width:70%;
-  display: flex;
+    width:80%;
+    display: flex;
     flex-direction: row;
-    // justify-items: center;
+      // justify-items: center;
     justify-content: space-between;
     list-style-type: none;
-    // &__li{
-    //   text-sty:  ;
-    // }
+      // &__li{
+      //   text-sty:  ;
+      // }
     position: relative;
 }
 .presentation{
   width:70%;
-  
+  margin:0% auto;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
+h1{
+  color: $maincolor;
+}
+P{
+  text-align: center;
+ 
+}
+.buttonView{
+  padding: 1% 6%;
+  background-color:$buttonColor;
+  color: white;
+}
+.top3{
+  width: 60%;
+  margin: 0% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+}
+.fa-crown{
+  color: $maincolor;
+}
+.agents{
+  width:40%;
+  margin:0% auto;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.agent{
+  width:100px;
+  // height: 85px;
+  border-radius: 50% ;
+  border: 2px solid $maincolor;
+}
+h4{
+  font-weight: 400;
+}
+
 

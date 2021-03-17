@@ -19,28 +19,29 @@
 consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
  Ut enim ad minim veniam, quis nostrud exercitation .</p>
 <!-- <a href="header.php">view</a> -->
-<div><a href="Contacte.view.php">view</a></div>
+<div class="buttonView">view</div>
 </div>
 
 <div>
-<div>
-<img>
-<h4>Top 3 Agent</h4>
-</div>
-<div>
-<div>
-<img src="/imgs/old.jpg" alt="">
-<h4>Name Agent</h4>
-</div>
-<div>
-<img src="/imgs/girl.jpg" alt="">
-<h4>Name Agent</h4>
-</div>
-<div>
-<img src="/imgs/adult.jpg" alt="">
-<h4>Name Agent</h4>
+
+<div class="top3">
+  <i class="fas fa-crown"></i>
+  <h3>Top 3 Agent</h3>
 </div>
 
+<div class="agents">
+<div>
+  <img src="/imgs/old.png" alt="" class="agent">
+  <h4>Name Agent</h4>
+</div>
+<div>
+  <img src="/imgs/girl.png" alt="" class="agent">
+  <h4>Name Agent</h4>
+</div>
+<div>
+  <img src="/imgs/adult.png" alt="" class="agent">
+  <h4>Name Agent</h4>
+</div>
 
 </div>
 
