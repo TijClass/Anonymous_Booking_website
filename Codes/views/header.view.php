@@ -14,12 +14,12 @@
   </ul>
 </div>
 <div class="presentation" >
-<h1>la maison des réves</h1>
+<h1 class="firstTitle">la maison des réves</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit lorem ipsum dolor sit amet, 
 consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
  Ut enim ad minim veniam, quis nostrud exercitation .</p>
 <!-- <a href="header.php">view</a> -->
-<div class="buttonView">view</div>
+<div class="buttonClik">view</div>
 </div>
 
 <div>
@@ -32,15 +32,15 @@ consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolo
 <div class="agents">
 <div>
   <img src="/imgs/old.png" alt="" class="agent">
-  <h4>Name Agent</h4>
+  <h4 class="fontName">Name Agent</h4>
 </div>
 <div>
   <img src="/imgs/girl.png" alt="" class="agent">
-  <h4>Name Agent</h4>
+  <h4 class="fontName">Name Agent</h4>
 </div>
 <div>
   <img src="/imgs/adult.png" alt="" class="agent">
-  <h4>Name Agent</h4>
+  <h4 class="fontName">Name Agent</h4>
 </div>
 
 </div>

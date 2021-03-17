@@ -1,14 +1,56 @@
 
 
-.story {
+// .story {
 
-    &__pictures{
-        background-color: $color-grey-light-2 ;
-        grid-column: full-start / col-end 4 ;
-    }
+//     &__pictures{
+//         background-color: $color-grey-light-2 ;
+//         grid-column: full-start / col-end 4 ;
+//     }
     
-    &__content{
-        background-color: $color-grey-dark-1;
-        grid-column: col-start 5 / full-end ;
-    }
+//     &__content{
+//         background-color: $color-grey-dark-1;
+//         grid-column: col-start 5 / full-end ;
+//     }
+// }
+.story{
+    width:100%;
+    background-image: url('../imgs/dream.png');
+    height:60vh;
+    // height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.story::before {    
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background:linear-gradient(#03080D,#0D2843 );
+    opacity: 0.91;
+}
+.flexStory{
+        width:70%;
+        height:90%;
+        margin:0% auto;
+        display:flex;
+        flex-direction: column;
+        // justify-content: space-between;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+      }
+
+
+.secondTitle{
+    color:#0a84ff;
+    // font-weight: italic ;
+    font-style: oblique;
+
 }

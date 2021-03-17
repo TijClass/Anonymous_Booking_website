@@ -26,7 +26,8 @@ header::before {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: rgba(0, 0, 0, 0.8); }
+  background: linear-gradient(#03080D, #0D2843);
+  opacity: 0.91; }
 
 .container {
   width: 80%;
@@ -53,7 +54,8 @@ header::before {
   flex-direction: row;
   justify-content: space-between;
   list-style-type: none;
-  position: relative; }
+  position: relative;
+  font-weight: 200; }
 
 .presentation {
   width: 70%;
@@ -61,15 +63,16 @@ header::before {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  justify-items: center; }
 
-h1 {
+.firstTitle {
   color: #f9b90f; }
 
 P {
   text-align: center; }
 
-.buttonView {
+.buttonClik {
   padding: 1% 6%;
   background-color: #4aa4ff;
   color: white; }
@@ -99,5 +102,40 @@ P {
   border-radius: 50%;
   border: 2px solid #f9b90f; }
 
-h4 {
+.fontName {
   font-weight: 400; }
+
+.story {
+  width: 100%;
+  background-image: url("../imgs/dream.png");
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: white;
+  align-items: center;
+  justify-content: space-between; }
+
+.story::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: linear-gradient(#03080D, #0D2843);
+  opacity: 0.91; }
+
+.flexStory {
+  width: 70%;
+  height: 90%;
+  margin: 0% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: center; }
+
+.secondTitle {
+  color: #0a84ff;
+  font-style: oblique; }
