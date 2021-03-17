@@ -1,4 +1,4 @@
-<div id="features">
+<div class="features">
       <h1 class="title">Name Section</h1>
       <div class="carte">
             <div class="maison">
