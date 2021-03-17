@@ -13,9 +13,16 @@
 <body>
 <?php
  include "header.view.php" ;
+ include "features.view.php";
+ include "partner.view.php";
  include "STORY_clients.view.php";
+ include "homes.view.php";
  include "footer.view.php";
 //  include "Contacte.view.php"
+//  include "model.view.php"
+
+    
+    
 ?>  
 
 </body>
