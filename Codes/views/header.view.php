@@ -2,7 +2,8 @@
 <header>
 <div class="container">
 <div class="nav">
-  <span><img src="/imgs/logo.svg" class="logo"></span>
+   <img src="/imgs/logo.svg"class="logo">
+
   <ul class="menu">
     <li>la maison des réves</li>
     <li>Proposition</li>
@@ -12,8 +13,8 @@
     <li>Contactez-nous</li>
   </ul>
 </div>
-<div>
-<h1 style="color:#ffcf2f" text-align="center">la maison des réves</h1>
+<div class="presentation" >
+<h1>la maison des réves</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit lorem ipsum dolor sit amet, 
 consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
  Ut enim ad minim veniam, quis nostrud exercitation .</p>
