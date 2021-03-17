@@ -2,7 +2,7 @@
 <div>
   <div>
     <div>
-        <img src="./imgs/logo.svg">
+        <img src="/imgs/logo.svg">
     </div>
     <div>
         <i class="fas fa-envelope-open-text"></i>

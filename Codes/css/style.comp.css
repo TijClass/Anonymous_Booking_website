@@ -1,63 +1,43 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
+body {
+  margin: 0%;
+  padding: 0%; }
+
+* {
+  padding: 0%;
+  /* color: #fff; */
+  box-sizing: border-box; }
 
 html {
-  box-sizing: border-box;
-  font-size: 62.5%; }
+  box-sizing: border-box; }
 
-body {
-  font-family: "Nunito", sans-serif;
-  color: #6D5D4B;
-  font-weight: 300;
-  line-height: 1.6; }
+header {
+  width: 100%;
+  height: auto;
+  background-image: url("../imgs/house.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .container {
-  display: grid;
-  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
-  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  width: 80%;
+  height: auto;
+  margin: 0% auto;
+  display: flex;
+  flex-direction: column; }
 
-.sidebar {
-  background-color: #c69963;
-  grid-column: sidebar-start / sidebar-end;
-  grid-row: 1/-1; }
+.nav {
+  width: 100%;
+  position: relative;
+  display: inline; }
 
-.header {
-  background-color: #B28451;
-  grid-column: full-start / col-end 6; }
+.logo {
+  width: 10%;
+  height: 10%;
+  display: inline;
+  position: relative; }
 
-.agent {
-  background-color: #101d2c;
-  grid-column: col-start 7 / full-end; }
-
-.features {
-  grid-column: center-start / center-end;
-  margin: 15rem 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 6rem; }
-  .features__feature {
-    background-color: red; }
-
-.story__pictures {
-  background-color: #aaa;
-  grid-column: full-start / col-end 4; }
-
-.story__content {
-  background-color: #54483A;
-  grid-column: col-start 5 / full-end; }
-
-.homes {
-  background-color: red;
-  grid-column: center-start / center-end; }
-
-.gallery {
-  background-color: royalblue;
-  grid-column: full-start / full-end; }
-
-.footer {
-  background-color: salmon;
-  grid-column: full-start / full-end; }
+.menu {
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  position: relative; }
