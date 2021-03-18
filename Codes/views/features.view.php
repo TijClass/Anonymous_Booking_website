@@ -1,5 +1,6 @@
 <div class="features">
       <h1 class="title">Name Section</h1>
+      <div class="container">
       <div class="carte">
             <div class="maison">
                      <div class="elipse"><i class="fas fa-globe-americas"></i></div>
@@ -37,5 +38,7 @@
 
             </div>
       </div>
+      </div>
+     
 </div>
 

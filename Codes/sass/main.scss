@@ -1,15 +1,14 @@
-$maincolor:#f9b90f;
-$buttonColor:#4aa4ff;
-$fontFam: 'Poppins', sans-serif;
-$footerColor:#f4f4f4;
 
-// @import "base";
-// @import "typography";
-// @import "sidebar";
+@import "base";
+@import "typography";
+@import "sidebar";
 @import "header";
-// @import "agent";
-// @import "features";
+@import "agent";
+@import "features";
 @import "story";
-// @import "homes";
+@import "homes";
 @import "gallery";
 @import "footer";
+@import "partner";
+// @import "model";
+

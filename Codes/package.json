@@ -13,7 +13,7 @@
     "building-prod": "npm-run-all  prefix:css compress:css",
     "fin-production": "===========================================",
     "Mode-dev": "==============Branch dev==============",
-    "watch-dev": "node-sass sass/main.scss css/style.comp.css",
+    "watch-dev": "node-sass sass/main.scss css/style.comp.css -w",
     "start:dev": "concurrently  \"npm run server:prod\" \"npm run watch-dev\"",
     "compiler:sass": "node-sass sass/main.scss css/style.comp.css",
     "concat:css": "concat -o css/style.concat.css css/font-awesome.css css/style.comp.css",

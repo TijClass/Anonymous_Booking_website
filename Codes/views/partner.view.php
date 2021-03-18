@@ -1,4 +1,4 @@
-<div class="typography">
+<div class="container">
              <h1 class="title">Name Section</h1>
                  <div class="pictures"> 
                     <img src="../imgs/OMNI.png" alt="OMNI">

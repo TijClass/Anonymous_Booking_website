@@ -1,17 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 .homes1{
-    width:80%;
-    height:100%;
-   margin: 0% auto;
+    width: 80%;
     .container1{
         background-image: url(../imgs/img-carte.png);
         background-repeat: no-repeat;
         height: 300px;
-        width: 450px;
-        margin: 42px;
-        .visibel1{
-            .title-seconde{
+        width: 100%;
+        margin-left: 40%;
+        border-radius: 5px;
+        overflow: hidden; 
+        position: relative; 
+            .visibel1{
                 font-size: 28px;
-                color: #FFFFFF;}   
-                }
-    }
+                color: #FFFFFF;
+                padding-top: 10px;
+                padding-left: 10px;
+                
+            }
+               .hide{
+                   
+                   .font{
+                       color:#F9B90F;
+                       span{
+                           color: #FFFFFF;
+                           font-size: 20px; } }
+                    .btn{
+                        background-color: #0A84FF;
+                        height: 37px;
+                        width: 160px;
+                        border-radius: 5px;
+                        border: #0A84FF;
+                        .phone{
+                            color: #FFFFFF;
+                            font-size: 15px;
+                        }
+                     }
+                        
+                    }       
+               }
+                        
 }

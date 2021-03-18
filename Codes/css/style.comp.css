@@ -1,3 +1,8 @@
+.sidebar {
+  background-color: #c69963;
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 1/-1; }
+
 body {
   margin: 0%;
   padding: 0%;
@@ -105,6 +110,38 @@ P {
 .fontName {
   font-weight: 400; }
 
+.features {
+  background-color: #FFFFFF;
+  width: 100%; }
+
+.title {
+  font-size: 49px;
+  text-align: center;
+  text-decoration: solid #F9B90F underline 5px; }
+
+.carte {
+  text-align: center;
+  font-size: 26px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 32px; }
+
+.elipse {
+  background: #0D2843;
+  border-radius: 50%;
+  width: 108px;
+  height: 108px;
+  border: 3px solid #F9B90F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  margin: auto;
+  padding: 10px; }
+  .elipse i {
+    color: #F9B90F; }
+
 .story {
   width: 100%;
   background-image: url("../imgs/dream.png");
@@ -139,6 +176,42 @@ P {
 .secondTitle {
   color: #0a84ff;
   font-style: oblique; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.homes1 {
+  width: 80%; }
+  .homes1 .container1 {
+    background-image: url(../imgs/img-carte.png);
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+    margin-left: 40%;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative; }
+    .homes1 .container1 .visibel1 {
+      font-size: 28px;
+      color: #FFFFFF;
+      padding-top: 10px;
+      padding-left: 10px; }
+    .homes1 .container1 .hide .font {
+      color: #F9B90F; }
+      .homes1 .container1 .hide .font span {
+        color: #FFFFFF;
+        font-size: 20px; }
+    .homes1 .container1 .hide .btn {
+      background-color: #0A84FF;
+      height: 37px;
+      width: 160px;
+      border-radius: 5px;
+      border: #0A84FF; }
+      .homes1 .container1 .hide .btn .phone {
+        color: #FFFFFF;
+        font-size: 15px; }
 
 .gridGallery {
   width: 100%;
@@ -228,3 +301,10 @@ footer {
   height: 25%;
   color: white;
   font-size: 15px; }
+
+.pictures {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px; }
+  .pictures img {
+    width: 200px; }
