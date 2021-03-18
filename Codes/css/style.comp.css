@@ -189,13 +189,17 @@ P {
   width: 100%; }
 
 footer {
+  margin-top: 100px;
   width: 100%;
-  height: 20vh; }
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-content: center; }
 
 .bgcolor {
   background-color: #f4f4f4;
   width: 100%;
-  height: 75%; }
+  flex: 2/3; }
 
 .flexFooter {
   width: 80%;
@@ -209,7 +213,7 @@ footer {
   position: relative; }
 
 .modifyLogo {
-  height: 3rem; }
+  width: 55%; }
 
 .flexinp {
   align-items: center;
@@ -225,7 +229,7 @@ footer {
   font-size: xx-large; }
 
 .flexInput {
-  padding-top: 2%; }
+  padding: 1.5%; }
 
 .buttonSubmit {
   padding: 1% 6%;
@@ -235,6 +239,14 @@ footer {
 .bgcolor2 {
   background-color: black;
   width: 100%;
-  height: 25%;
   color: white;
-  font-size: 15px; }
+  font-size: 15px;
+  flex: 1/3; }
+
+.flexMenu {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  position: relative; }

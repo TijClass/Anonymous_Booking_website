@@ -16,7 +16,7 @@
 <div class="bgcolor2">
   <div class="flexFooter">
     <div>Copyright © 2021 booking Company</div>
-    <ul class="menu">
+    <ul class="flexMenu">
         <li>la maison des réves</li>
         <li>Proposition</li>
         <li>Plan</li>
