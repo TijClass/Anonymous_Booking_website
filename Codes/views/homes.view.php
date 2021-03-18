@@ -4,13 +4,13 @@
               
          <div class="container1">
                   <div class="visibel1">
-                             <h3 class="title-seconde">Maison de familles</h3>
+                             <h3 class="title-seconde" >Maison de familles</h3>
                              <i class="fas fa-map-marker-alt">Maroc</i>
                        </div>
                        <div class="hide">
                             <div class="font">
                                  <i class="fas fa-location-arrow">230 m²</i>
-                                 <i class="fas fa-bed">rooms</i>
+                                 <i class="fas fa-bed">4rooms</i>
                                  <i class="fas fa-tag">50M MAD</i>
                              </div>
                              <button class="btn">
@@ -27,7 +27,7 @@
                        <div class="hide">
                             <div class="font">
                                  <i class="fas fa-location-arrow">230 m²</i>
-                                 <i class="fas fa-bed">rooms</i>
+                                 <i class="fas fa-bed">4rooms</i>
                                  <i class="fas fa-tag">50M MAD</i>
                              </div>
                              <button class="btn">
@@ -44,7 +44,7 @@
                        <div class="hide">
                             <div class="font">
                                  <i class="fas fa-location-arrow">230 m²</i>
-                                 <i class="fas fa-bed">rooms</i>
+                                 <i class="fas fa-bed">4rooms</i>
                                  <i class="fas fa-tag">50M MAD</i>
                              </div>
                              <button class="btn">
@@ -61,7 +61,7 @@
                    <div class="hide">
                             <div class="font">
                                  <i class="fas fa-location-arrow">230 m²</i>
-                                 <i class="fas fa-bed">rooms</i>
+                                 <i class="fas fa-bed">4rooms</i>
                                  <i class="fas fa-tag">50M MAD</i>
                              </div>
                              <button class="btn">
@@ -78,7 +78,7 @@
                        <div class="hide">
                             <div class="font">
                                  <i class="fas fa-location-arrow">230 m²</i>
-                                 <i class="fas fa-bed">rooms</i>
+                                 <i class="fas fa-bed">4rooms</i>
                                  <i class="fas fa-tag">50M MAD</i>
                              </div>
                              <button class="btn">

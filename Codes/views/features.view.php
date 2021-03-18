@@ -24,7 +24,7 @@
                      <p>Lorem ipsum dolor sit <br>amet, consectetur <br>adipisicing elit</p>
 
             </div>
-            <div class="agent">
+            <div class="agent1">
                      <div class="elipse"></div>
                      <h2>Top Agents</h2>
                      <p>Lorem ipsum dolor sit<br> amet, consectetur<br> adipisicing elit</p>
