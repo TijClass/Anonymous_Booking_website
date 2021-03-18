@@ -215,41 +215,51 @@ P {
 
 .gridGallery {
   width: 100%;
-  height: 70vh;
   background-color: royalblue;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr 1fr; }
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 0%; }
 
 .gridImg1 {
-  grid-area: 1/1 / 2/2; }
+  grid-area: 1/1 / 2/2;
+  width: 100%; }
 
 .gridImg2 {
-  grid-area: 2/1 / 2/3; }
+  grid-area: 1/2 / 2/3;
+  width: 100%; }
 
 .gridImg3 {
-  grid-area: 3/1 / 2/4; }
+  grid-area: 1/3 / 2/4;
+  width: 100%; }
 
 .gridImg4 {
-  grid-area: 4/1 / 2/5; }
+  grid-area: 1/4 / 2/5;
+  width: 100%; }
 
 .gridImg5 {
-  grid-area: 5/1 / 2/6; }
+  grid-area: 1/5 / 2/6;
+  width: 100%; }
 
 .gridImg6 {
-  grid-area: 1/2 / 3/2; }
+  grid-area: 2/1 / 3/2;
+  width: 100%; }
 
 .gridImg7 {
-  grid-area: 2/2 / 3/3; }
+  grid-area: 2/2 / 3/3;
+  width: 100%; }
 
 .gridImg8 {
-  grid-area: 3/2 / 3/4; }
+  grid-area: 2/3 / 3/4;
+  width: 100%; }
 
 .gridImg9 {
-  grid-area: 4/2 / 3/5; }
+  grid-area: 2/4 / 3/5;
+  width: 100%; }
 
 .gridImg10 {
-  grid-area: 5/2 / 3/6; }
+  grid-area: 2/5 / 3/6;
+  width: 100%; }
 
 footer {
   width: 100%;
