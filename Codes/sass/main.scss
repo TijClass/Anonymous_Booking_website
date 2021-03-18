@@ -1,6 +1,7 @@
 $maincolor:#f9b90f;
 $buttonColor:#4aa4ff;
 $fontFam: 'Poppins', sans-serif;
+$footerColor:#f4f4f4;
 
 // @import "base";
 // @import "typography";
@@ -10,5 +11,5 @@ $fontFam: 'Poppins', sans-serif;
 // @import "features";
 @import "story";
 // @import "homes";
-// @import "gallery";
-// @import "footer";
+@import "gallery";
+@import "footer";

@@ -139,3 +139,92 @@ P {
 .secondTitle {
   color: #0a84ff;
   font-style: oblique; }
+
+.gridGallery {
+  width: 100%;
+  height: 70vh;
+  background-color: royalblue;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 1fr; }
+
+.gridImg1 {
+  grid-area: 1/1 / 2/2; }
+
+.gridImg2 {
+  grid-area: 2/1 / 2/3; }
+
+.gridImg3 {
+  grid-area: 3/1 / 2/4; }
+
+.gridImg4 {
+  grid-area: 4/1 / 2/5; }
+
+.gridImg5 {
+  grid-area: 5/1 / 2/6; }
+
+.gridImg6 {
+  grid-area: 1/2 / 3/2; }
+
+.gridImg7 {
+  grid-area: 2/2 / 3/3; }
+
+.gridImg8 {
+  grid-area: 3/2 / 3/4; }
+
+.gridImg9 {
+  grid-area: 4/2 / 3/5; }
+
+.gridImg10 {
+  grid-area: 5/2 / 3/6; }
+
+footer {
+  width: 100%;
+  height: 20vh; }
+
+.bgcolor {
+  background-color: #f4f4f4;
+  width: 100%;
+  height: 75%; }
+
+.flexFooter {
+  width: 80%;
+  height: 100%;
+  margin: 0% auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  position: relative; }
+
+.modifyLogo {
+  height: 3rem; }
+
+.flexinp {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-around;
+  width: 35%; }
+
+.fa-envelope-open-text {
+  color: #0a84ff;
+  font-size: xx-large; }
+
+.flexInput {
+  padding-top: 2%; }
+
+.buttonSubmit {
+  padding: 1% 6%;
+  background-color: #0a84ff;
+  color: white; }
+
+.bgcolor2 {
+  background-color: black;
+  width: 100%;
+  height: 25%;
+  color: white;
+  font-size: 15px; }

@@ -19,6 +19,7 @@
  include "partner.view.php";
  include "STORY_clients.view.php";
  include "homes.view.php";
+ include "gallery.view.php";
  include "footer.view.php";
 //  include "Contacte.view.php"
 //  include "model.view.php"

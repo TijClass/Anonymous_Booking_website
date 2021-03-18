@@ -1,5 +1,64 @@
-.footer{
-
-    background-color: salmon;
-    grid-column: full-start / full-end;
+footer{
+width: 100%;
+height: 20vh;
+    // background-color: rgb(241, 16, 16);
+   
+}
+.bgcolor{
+    background-color: $footerColor;;
+    width: 100%;
+    height: 75%;
+    // display: flex;
+    // flex-direction: row;
+    // width:100%;
+    // // height: 100%;
+}
+.flexFooter{
+    
+        width:80%;
+        height:100%;
+       margin: 0% auto;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+       align-content: center;
+       position: relative;
+    //    color: blue;
+     
+}
+.modifyLogo{
+    // width: 100%;
+    height: 3rem;
+    
+}
+.flexinp{
+   align-items: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   align-content: space-around;
+   width:35%;
+}
+.fa-envelope-open-text{
+    color: #0a84ff ;
+    font-size: xx-large;
+}
+.flexInput{
+    padding-top: 2%;
+    // max-height: 25%;
+}
+.buttonSubmit{
+    padding: 1% 6%;
+    background-color:#0a84ff;
+    color: white;
+    
+  }
+.bgcolor2{
+    background-color: black;;
+    width: 100%;
+    height: 25%;
+    color: white;
+    font-size: 15px;
 }

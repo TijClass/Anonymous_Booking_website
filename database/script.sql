@@ -1,5 +1,4 @@
-create database booking;
-use `booking`;
+
 /* create features table */
 create table features
 (
