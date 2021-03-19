@@ -413,6 +413,7 @@ footer {
 .containerContacte {
   margin-top: 100px;
   width: 80%;
+  height: 75vh;
   margin: 0% auto;
   display: flex;
   flex-direction: column;
@@ -456,7 +457,6 @@ footer {
 .text {
   width: 100%;
   weight: 400; }
-  font-size: 15px; }
 
 .first-title {
   font-size: 49px;
