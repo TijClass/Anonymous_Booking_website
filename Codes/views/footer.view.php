@@ -1,20 +1,20 @@
 <footer>
 <!-- <div class="container"> -->
   <div class="bgcolor">
-  <div class="flexFooter">
+  <div class="flexFooterUp">
     <div>
         <img src="/imgs/logom.svg" class="modifyLogo">
     </div>
     <div class="flexinp">
         <i class="fas fa-envelope-open-text"></i>
-        <input class="flexInput" type="email" placeholder="email">
-        <span class="buttonSubmit">Subscribe</span>
+        <input class="flexInput" type="email" placeholder="  email">
+        <input type="submit" value="subscribe" class="buttonSubmit">
     </div>
   </div>
 </div>
 
 <div class="bgcolor2">
-  <div class="flexFooter">
+  <div class="flexFooterDown">
     <div>Copyright © 2021 booking Company</div>
     <ul class="flexMenu">
         <li>la maison des réves</li>

@@ -1,7 +1,7 @@
 footer{
 margin-top: 100px;
 width: 100%;
-// height: 30vh;
+height: 20vh;
 display:flex;
 flex-direction: column;
 justify-items: center;
@@ -10,14 +10,9 @@ align-content: center;
 .bgcolor{
     background-color: $footerColor;;
     width: 100%;
-    // height: 75%;
-    // display: flex;
-    // flex-direction: row;
-    // width:100%;
-    // // height: 100%;
-    flex:2/3;
+    flex:2;
 }
-.flexFooter{
+.flexFooterUp{
     width:80%;
     height:100%;
     margin: 0% auto;
@@ -29,8 +24,8 @@ align-content: center;
     position: relative;
 }
 .modifyLogo{
-    width: 55%;
-    // height:60%;
+    width: 50%;
+    height:100%;
     
 }
 .flexinp{
@@ -39,37 +34,55 @@ align-content: center;
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
-   align-content: space-around;
-   width:35%;
+   align-content: center;
+   width:50%;
+   height:100%;
 }
 .fa-envelope-open-text{
     color: #0a84ff ;
-    font-size: xx-large;
+    font-size: 1.9rem;
+   
 }
 .flexInput{
-    padding: 1.5%;
-    // max-height: 25%;
+    height: 40%;
+    width: 60%;
+    border: none;
+    border-radius:2px;
 }
 .buttonSubmit{
-    padding: 1% 6%;
     background-color:#0a84ff;
     color: white;
+    height: 40%;
+    width: 20%;
+    border: none;
+    border-radius: 2px;
     
   }
 .bgcolor2{
     background-color: black;;
     width: 100%;
-    // height: 25%;
+    height: 25%;
     color: white;
     font-size: 15px;
-    flex: 1/3;
+    flex: 1;
+}
+.flexFooterDown{
+    width:80%;
+    height:100%;
+    margin: 0% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    font-size: 12px;
 }
 .flexMenu{
-    width:80%;
+    width:60%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     list-style-type: none;
     position: relative;
-    // font-weight: 200;
 }
