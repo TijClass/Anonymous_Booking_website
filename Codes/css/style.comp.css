@@ -1,3 +1,7 @@
+.sidebar {
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 1/-1; }
+
 body {
   margin: 0%;
   padding: 0%;
@@ -105,6 +109,49 @@ P {
 .fontName {
   font-weight: 400; }
 
+.features {
+  background-color: #FFFFFF;
+  width: 100%;
+  margin-top: 100px; }
+  .features .seconde-title {
+    font-size: 49px;
+    text-align: center;
+    position: relative; }
+  .features .seconde-title:after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background-color: #f9b90f;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; }
+  .features .carte {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 26px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 32px; }
+    .features .carte p {
+      font-size: 20px; }
+    .features .carte .elipse {
+      background: #0D2843;
+      border-radius: 50%;
+      width: 108px;
+      height: 108px;
+      border: 3px solid #f9b90f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      margin: auto;
+      padding: 10px; }
+      .features .carte .elipse i {
+        color: #f9b90f; }
+
 .story {
   width: 100%;
   background-image: url("../imgs/dream.png");
@@ -139,6 +186,96 @@ P {
 .secondTitle {
   color: #0a84ff;
   font-style: oblique; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.homes1 {
+  margin-top: 100px; }
+  .homes1 .first-title {
+    font-size: 49px;
+    text-align: center;
+    position: relative;
+    margin: auto; }
+  .homes1 .first-title:after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background-color: #f9b90f;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; }
+  .homes1 .carte1 {
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 26px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+    max-width: 80%; }
+  .homes1 .container1 {
+    background-image: url(../imgs/img-carte.png);
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative; }
+    .homes1 .container1:before {
+      transition: 1s;
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: rgba(17, 1, 53, 0.76);
+      opacity: 0.3; }
+    .homes1 .container1 .visibel1 {
+      font-size: 28px;
+      color: #FFFFFF;
+      padding-top: 10px;
+      padding-left: 10px;
+      transform: translateY(100%); }
+    .homes1 .container1 .hide {
+      transform: translateY(100%);
+      transition: 1s;
+      position: absolute;
+      bottom: 0;
+      padding: 15px 10px; }
+      .homes1 .container1 .hide .font {
+        color: #f9b90f; }
+        .homes1 .container1 .hide .font span {
+          color: #FFFFFF;
+          font-size: 20px; }
+      .homes1 .container1 .hide .btn {
+        background-color: #0A84FF;
+        height: 37px;
+        width: 160px;
+        border-radius: 5px;
+        border: #0A84FF; }
+        .homes1 .container1 .hide .btn .phone {
+          color: #FFFFFF;
+          font-size: 15px; }
+  .homes1 .container1:hover:before {
+    transition: 1s;
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(17, 1, 53, 0.76);
+    opacity: 0.5; }
+  .homes1 .container1:hover .hide, .homes1 .container1:hover .visibel1 {
+    transition: 1s;
+    transform: translateY(0%); }
 
 .gridGallery {
   width: 100%;
@@ -319,3 +456,69 @@ footer {
 .text {
   width: 100%;
   weight: 400; }
+  font-size: 15px; }
+
+.first-title {
+  font-size: 49px;
+  text-align: center;
+  position: relative; }
+
+.first-title:after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  background-color: #f9b90f;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto; }
+
+.pictures {
+  display: flex;
+  justify-content: space-around; }
+  .pictures img {
+    width: 25%; }
+
+.container.model {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.767);
+  z-index: 9;
+  display: none; }
+  .container.model .content {
+    max-width: 80%;
+    max-height: 70vh;
+    margin: auto;
+    display: flex;
+    background-color: #FFFFFF;
+    overflow: hidden; }
+    .container.model .content .img {
+      height: 100%; }
+      .container.model .content .img img {
+        width: 100%;
+        height: 50%;
+        margin: 0;
+        padding: 0; }
+    .container.model .content .text-content {
+      padding: 5%; }
+      .container.model .content .text-content h1 {
+        color: #f9b90f; }
+      .container.model .content .text-content h3 {
+        color: #0A84FF; }
+      .container.model .content .text-content p {
+        text-align: left;
+        font-size: 0.7rem;
+        margin-bottom: 16px; }
+      .container.model .content .text-content a {
+        background-color: #0A84FF;
+        padding: 10px 25px;
+        color: #FFFFFF;
+        text-decoration: none;
+        display: inline-block; }
+
+.model.show {
+  display: flex; }

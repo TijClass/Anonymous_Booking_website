@@ -1,17 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 .homes1{
-    width:80%;
-    height:100%;
-   margin: 0% auto;
+    
+    margin-top: 100px;
+    .first-title{
+        font-size: 49px;
+        text-align: center;
+        position: relative;
+        margin: auto;
+      }
+      .first-title:after{
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 5px;
+        background-color: $maincolor;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    
+    .carte1{
+        margin: auto;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        text-align: center;
+        font-size: 26px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 32px;
+        max-width: 80%;
+    }
     .container1{
         background-image: url(../imgs/img-carte.png);
         background-repeat: no-repeat;
         height: 300px;
-        width: 450px;
-        margin: 42px;
-        .visibel1{
-            .title-seconde{
+        width: 100%;
+        border-radius: 5px;
+        overflow: hidden; 
+        position: relative;
+        &:before{
+            transition: 1s;
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: rgba(17, 1, 53, 0.76);
+            opacity: 0.3;
+        } 
+            .visibel1{
                 font-size: 28px;
-                color: #FFFFFF;}   
-                }
+                color: $whiteColor;
+                padding-top: 10px;
+                padding-left: 10px;
+                transform: translateY(100%);
+            }
+               .hide{
+                    transform: translateY(100%);
+                    transition: 1s;
+                    position: absolute;
+                    bottom: 0;
+                    padding: 15px 10px;
+                   .font{
+                       color:$maincolor;
+                       span{
+                           color: $whiteColor;
+                           font-size: 20px; } }
+                    .btn{
+                        background-color: $blueColor;
+                        height: 37px;
+                        width: 160px;
+                        border-radius: 5px;
+                        border: $blueColor;
+                        .phone{
+                            color: $whiteColor;
+                            font-size: 15px;
+                        }
+                     }
+                        
+                    }       
     }
+    .container1:hover{
+        &:before{
+            transition: 1s;
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: rgba(17, 1, 53, 0.76);
+            opacity: 0.5;
+        }
+        .hide,.visibel1{
+            transition: 1s;
+            transform: translateY(0%);
+        }
+    }
+                        
 }

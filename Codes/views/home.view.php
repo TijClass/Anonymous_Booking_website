@@ -22,7 +22,7 @@
  include "gallery.view.php";
  include "footer.view.php";
  include "Contacte.view.php";
-//  include "model.view.php"
+ include "model.view.php"
 
     
     
