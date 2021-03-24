@@ -2,6 +2,9 @@
 .homes {
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    @include s-phone{
+        grid-template-columns: 1fr;
+    }
     grid-gap: 32px;
     .home{
         border-radius: 5px;

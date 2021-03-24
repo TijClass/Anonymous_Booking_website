@@ -55,6 +55,9 @@ body {
 main > section {
   margin: 0;
   padding: 64px; }
+  @media (max-width: 599px) {
+    main > section {
+      padding: 64px 8px; } }
 
 html {
   font-size: 100%; }
@@ -110,9 +113,42 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between; }
+    @media (max-width: 599px) {
+      nav > div > a {
+        margin: auto; } }
   nav .logo {
     width: 150px;
     padding: 15px; }
+    @media (max-width: 599px) {
+      nav .logo {
+        margin: auto; } }
+  @media (max-width: 599px) {
+    nav .link-items {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      top: 0;
+      right: 0;
+      background: #0d2843;
+      z-index: 9;
+      flex-direction: column;
+      text-align: center;
+      justify-content: space-around;
+      display: none; } }
+  nav .link-items.show {
+    display: flex; }
+    @media (max-width: 599px) {
+      nav .link-items.show:before {
+        content: "X";
+        position: absolute;
+        right: 8px;
+        top: 8px;
+        width: 32px;
+        height: 32px;
+        background: #f9f7f6;
+        border-radius: 32px;
+        line-height: 32px;
+        text-align: center; } }
   nav .link-items li {
     display: inline-block; }
     nav .link-items li a {
@@ -185,6 +221,9 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem; }
+  @media (max-width: 599px) {
+    .features {
+      grid-template-columns: 1fr; } }
   .features .feature {
     text-align: center;
     border-radius: 5px;
@@ -213,6 +252,10 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-around; }
+  @media (max-width: 599px) {
+    .partners {
+      flex-direction: column;
+      text-align: center; } }
   .partners img {
     width: 150px;
     height: auto; }
@@ -244,6 +287,9 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 32px; }
+  @media (max-width: 599px) {
+    .homes {
+      grid-template-columns: 1fr; } }
   .homes .home {
     border-radius: 5px;
     overflow: hidden;
@@ -313,6 +359,9 @@ header {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 0px; }
+  @media (max-width: 599px) {
+    .gallery {
+      grid-template-columns: 1fr; } }
   .gallery img {
     width: 100%;
     height: 100%; }
@@ -324,8 +373,18 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
+    @media (max-width: 599px) {
+      .footer-one > div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-between;
+        text-align: center; } }
     .footer-one > div img {
       width: 150px; }
+      @media (max-width: 599px) {
+        .footer-one > div img {
+          margin: auto;
+          margin-bottom: 8px; } }
     .footer-one > div form {
       min-width: 50%;
       display: flex;
@@ -335,6 +394,9 @@ header {
       .footer-one > div form i {
         font-size: 2rem;
         color: #0A84FF; }
+        @media (max-width: 599px) {
+          .footer-one > div form i {
+            margin-bottom: 8px; } }
       .footer-one > div form input {
         border: none;
         border-radius: 5px;
@@ -342,12 +404,21 @@ header {
         padding-left: 8px;
         height: 40px;
         min-width: 70%; }
+        @media (max-width: 599px) {
+          .footer-one > div form input {
+            margin-bottom: 8px; } }
       .footer-one > div form button {
         border: none;
         border-radius: 5px;
         background-color: #0A84FF;
         color: #f9f7f6;
         height: 40px; }
+        @media (max-width: 599px) {
+          .footer-one > div form button {
+            margin-bottom: 8px; } }
+      @media (max-width: 599px) {
+        .footer-one > div form {
+          flex-direction: column; } }
 
 .footer-tow {
   padding: 16px 0px;
@@ -358,9 +429,18 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center; }
+    @media (max-width: 599px) {
+      .footer-tow > div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-between;
+        text-align: center; } }
     .footer-tow > div .copyright {
       margin: 0px;
       font-size: .8rem; }
+      @media (max-width: 599px) {
+        .footer-tow > div .copyright {
+          margin-bottom: 16px; } }
     .footer-tow > div .link-items li {
       margin: 0px 8px;
       display: inline-block;

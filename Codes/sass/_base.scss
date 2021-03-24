@@ -15,8 +15,23 @@ $color-blue: #0A84FF;
 $font-primary: 'Nunito', sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
 
-//==============first part===============//
-
+//============== Responsive ===============//
+@mixin s-phone {
+    @media (max-width: 599px) { @content; }
+}
+@mixin s-tablet-portrait {
+    @media (min-width: 600px) { @content; }
+}
+@mixin s-tablet-landscape {
+    @media (min-width: 900px) { @content; }
+}
+@mixin s-desktop {
+    @media (min-width: 1200px) { @content; }
+}
+@mixin s-big-desktop {
+    @media (min-width: 1800px) { @content; }
+}
+//============== /Responsive ===============//
 *,
 *::after,
 *::before{
@@ -57,8 +72,6 @@ body{
     margin: auto;
 }
 
-//==============fin first part===============// 
-
 .section-title{
     text-align:center;
     color: $color-secondary;
@@ -82,5 +95,8 @@ main{
     > section{
         margin: 0;
         padding: 64px;
+        @include s-phone{
+            padding: 64px 8px;
+        }
     }
 }

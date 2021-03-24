@@ -5,8 +5,18 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        @include s-phone{
+            flex-direction: column;
+            justify-content: center;
+            align-items: space-between;
+            text-align: center;
+        }
         img{
             width: 150px;
+            @include s-phone{
+                margin: auto;
+                margin-bottom: 8px;
+            }
         }
         form{
             min-width: 50%;
@@ -17,6 +27,9 @@
             i{
                 font-size: 2rem;
                 color: $color-blue;
+                @include s-phone{
+                    margin-bottom: 8px;
+                }
             }
             input{
                 border:none;
@@ -25,6 +38,9 @@
                 padding-left: 8px;
                 height: 40px;
                 min-width: 70%;
+                @include s-phone{
+                    margin-bottom: 8px;
+                }
             }
             button{
                 border: none;
@@ -32,6 +48,12 @@
                 background-color: $color-blue;
                 color: $color-grey-light-1;
                 height: 40px;
+                @include s-phone{
+                    margin-bottom: 8px;
+                }
+            }
+            @include s-phone{
+                flex-direction: column;
             }
         }
     }
@@ -45,9 +67,18 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        @include s-phone{
+            flex-direction: column;
+            justify-content: center;
+            align-items: space-between;
+            text-align: center;
+        }
         .copyright{
             margin: 0px;
             font-size: .8rem;
+            @include s-phone{
+                margin-bottom: 16px;
+            }
         }
         .link-items{
             li{
