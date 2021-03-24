@@ -18,7 +18,7 @@
                 <li><a href="#">Plan</a></li>
                 <li><a href="#">Soumettez votre propriété</a></li>
                 <li><a href="#">Nous rejoindre</a></li>
-                <li><a href="#">Contactez-nous</a></li>
+                <li><a href="/contact">Contactez-nous</a></li>
             </ul>
         </div>
     </nav>
@@ -33,18 +33,12 @@
                 <i class="fa fa-crown"></i>
                 <small>Top 3 agents</small>
                 <div class="top-agent">
-                    <div class="agent">
-                        <img src="./img/a-1.png" alt="">
-                        <span>Agent name</span>
-                    </div>
-                    <div class="agent">
-                        <img src="./img/a-2.png" alt="">
-                        <span>Agent name</span>
-                    </div>
-                    <div class="agent">
-                        <img src="./img/a-3.png" alt="">
-                        <span>Agent name</span>
-                    </div>
+                    <?php foreach($top3Agents as $agent){?>
+                        <div class="agent">
+                            <img src="<?= $agent->image->url ?>" alt="<?= $agent->image->alt_title ?>">
+                            <span><?= $agent->name ?></span>
+                        </div>
+                    <?php } ?>
                 </div>
             </div>
         </div>
