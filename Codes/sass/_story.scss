@@ -1,14 +1,26 @@
-
-
-.story {
-
-    &__pictures{
-        background-color: $color-grey-light-2 ;
-        grid-column: full-start / col-end 4 ;
+#story {
+    background-image: url('../img/story-bg.png');
+    position: relative;
+    > *{
+        position: relative;
+        z-index: 1;
     }
-    
-    &__content{
-        background-color: $color-grey-dark-1;
-        grid-column: col-start 5 / full-end ;
+    &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: $color-secondary;
+        opacity: 0.93;
+    }
+}
+.story {
+    color: $color-grey-light-1;
+    text-align: center;
+    h2{
+        color: $color-primary;
+        font-weight: bold;
     }
 }
