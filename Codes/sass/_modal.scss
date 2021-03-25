@@ -7,6 +7,9 @@
     z-index: 99;
     background-color: $color-black-50;
     display: none;
+    &.show{
+        display: block;
+    }
     .modal{
         width: 70%;
         background-color: $color-grey-light-1;

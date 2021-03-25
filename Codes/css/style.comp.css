@@ -415,6 +415,8 @@ header {
   z-index: 99;
   background-color: rgba(0, 0, 0, 0.5);
   display: none; }
+  #modal.show {
+    display: block; }
   #modal .modal {
     width: 70%;
     background-color: #f9f7f6;
