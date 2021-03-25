@@ -25,4 +25,4 @@ $newsletters = $newsleter->all();
 // get home view
 include "./views/home.view.php";
 
-sendEmail();
+// sendEmail();
