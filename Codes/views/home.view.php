@@ -114,9 +114,9 @@
     <section class="footer-one">
         <div class="container">
             <img src="./img/logo-colored.png" alt="">
-            <form action="">
+            <form action="/newsletter" method="POST">
                 <i class="fa fa-envelope-open-text"></i>
-                <input type="email" name="email" id="email" placeholder="Email...">
+                <input type="email" name="email" id="email" required placeholder="Email...">
                 <button type="submit" class="btn-primary">Subscribe</button>
             </form>
         </div>
