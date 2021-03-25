@@ -22,7 +22,7 @@ $router->get("/contact", function ($request) {
     // include "./controllers/contact.controller.php";
 });
 $router->get("/route/:id",function ($request) {
-
+    
     echo "from another route";
 });
 $router->post("/route", function ($request) {
@@ -36,4 +36,9 @@ $router->get("/login", function ($request) {
 });
 $router->post("/login", function ($request) {
     include "./controllers/login.controller.php";
+});
+
+$router->post("/newsletter", function ($request) {   
+    // get home controller
+    include "./controllers/newsletter.controller.php";
 });
