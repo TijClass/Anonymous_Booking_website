@@ -48,36 +48,13 @@
                 <div class="container">
                     <h2 class="section-title">Features</h2>
                     <div class="features">
-                        <div class="feature">
-                            <i class="fa fa-globe"></i>
-                            <h3>Meilleurs choix des maisons</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                        </div>
-                        <div class="feature">
-                            <i class="fa fa-trophy"></i>
-                            <h3>Les meilleurs terrains</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                        </div>
-                        <div class="feature">
-                            <i class="fa fa-map-marker-alt"></i>
-                            <h3>Emplacement de reves</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                        </div>
-                        <div class="feature">
-                            <i class="fa fa-lock"></i>
-                            <h3>Payement sécurisé</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                        </div>
-                        <div class="feature">
-                            <i class="fa fa-chart-line"></i>
-                            <h3>Top Agents</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                        </div>
-                        <div class="feature">
-                            <i class="fa fa-key"></i>
-                            <h3>Des maisons à portée</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                        </div>
+                        <?php foreach($features as $feature){?>
+                            <div class="feature">
+                                <i class="fa fa-globe"></i>
+                                <h3><?= $feature->title ?></h3>
+                                <p><?= $feature->description ?></p>
+                            </div>
+                        <?php } ?>
                     </div>
                 </div>
         </section>

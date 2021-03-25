@@ -16,6 +16,8 @@ $top3Agents = $agent->getTop3(); // get Top 3 agents
 $homes = $hom->all(); // get all homes
 $features = $Feature->all();
 $partners = $Partner->all();
-
+echo "<pre>";
+print_r($homes);
+echo "</pre>";
 // get home view
 include "./views/home.view.php";
