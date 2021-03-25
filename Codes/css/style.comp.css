@@ -366,6 +366,46 @@ header {
     width: 100%;
     height: 100%; }
 
+.contact form {
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap; }
+  .contact form .form-group {
+    padding: 8px; }
+    .contact form .form-group .form-control {
+      width: 100%;
+      border: 1px solid #73A1C2;
+      border-radius: 5px;
+      margin: 0px 8px;
+      padding-left: 8px;
+      height: 40px;
+      color: #0A84FF; }
+    .contact form .form-group.full-name {
+      width: 50%; }
+    .contact form .form-group.email {
+      width: 50%; }
+    .contact form .form-group.message {
+      width: 100%; }
+      .contact form .form-group.message .form-control {
+        padding-top: 8px;
+        min-height: 150px; }
+    .contact form .form-group.type {
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+      .contact form .form-group.type > div {
+        display: flex;
+        align-items: center; }
+      .contact form .form-group.type .form-control {
+        width: auto; }
+    .contact form .form-group.send {
+      width: 100%; }
+      .contact form .form-group.send .btn-primary {
+        border: none;
+        padding: 15px 32px;
+        min-width: 200px; }
+
 .footer-one {
   padding: 16px 0px;
   background-color: #d7e2ec; }
