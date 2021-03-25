@@ -120,7 +120,7 @@
                         <span class="surface"><i class="fa fa-square"></i> 230m²</span>
                         <span class="rooms"><i class="fa fa-bed"></i> Chambres</span>
                         <span class="price"><i class="fa fa-dollar-sign"></i> 50M MAD</span>
-                        <a href="#" class="btn-primary"><i class="fa fa-phone"></i> Contactez Agents</a>
+                        <a href="/contact" class="btn-primary"><i class="fa fa-phone"></i> Contactez Agents</a>
                     </div>
                 </div>
                 <div class="home">
@@ -131,7 +131,7 @@
                         <span class="surface"><i class="fa fa-square"></i> 230m²</span>
                         <span class="rooms"><i class="fa fa-bed"></i> Chambres</span>
                         <span class="price"><i class="fa fa-dollar-sign"></i> 50M MAD</span>
-                        <a href="#" class="btn-primary"><i class="fa fa-phone"></i> Contactez Agents</a>
+                        <a href="/contact" class="btn-primary"><i class="fa fa-phone"></i> Contactez Agents</a>
                     </div>
                 </div>
                 <div class="home">
@@ -142,7 +142,7 @@
                         <span class="surface"><i class="fa fa-square"></i> 230m²</span>
                         <span class="rooms"><i class="fa fa-bed"></i> Chambres</span>
                         <span class="price"><i class="fa fa-dollar-sign"></i> 50M MAD</span>
-                        <a href="#" class="btn-primary"><i class="fa fa-phone"></i> Contactez Agents</a>
+                        <a href="/contact" class="btn-primary"><i class="fa fa-phone"></i> Contactez Agents</a>
                     </div>
                 </div>
                 <div class="home">
@@ -153,7 +153,7 @@
                         <span class="surface"><i class="fa fa-square"></i> 230m²</span>
                         <span class="rooms"><i class="fa fa-bed"></i> Chambres</span>
                         <span class="price"><i class="fa fa-dollar-sign"></i> 50M MAD</span>
-                        <a href="#" class="btn-primary"><i class="fa fa-phone"></i> Contactez Agents</a>
+                        <a href="/contact" class="btn-primary"><i class="fa fa-phone"></i> Contactez Agents</a>
                     </div>
                 </div>
                 <div class="home">
@@ -164,7 +164,7 @@
                         <span class="surface"><i class="fa fa-square"></i> 230m²</span>
                         <span class="rooms"><i class="fa fa-bed"></i> Chambres</span>
                         <span class="price"><i class="fa fa-dollar-sign"></i> 50M MAD</span>
-                        <a href="#" class="btn-primary"><i class="fa fa-phone"></i> Contactez Agents</a>
+                        <a href="/contact" class="btn-primary"><i class="fa fa-phone"></i> Contactez Agents</a>
                     </div>
                 </div>
                 <div class="home">
@@ -175,7 +175,7 @@
                         <span class="surface"><i class="fa fa-square"></i> 230m²</span>
                         <span class="rooms"><i class="fa fa-bed"></i> Chambres</span>
                         <span class="price"><i class="fa fa-dollar-sign"></i> 50M MAD</span>
-                        <a href="#" class="btn-primary"><i class="fa fa-phone"></i> Contactez Agents</a>
+                        <a href="/contact" class="btn-primary"><i class="fa fa-phone"></i> Contactez Agents</a>
                     </div>
                 </div>
             </div>
