@@ -59,7 +59,7 @@ class Home{
             return false;
         }
     }
-
+    
     // Save home data to database
     public function save(){
         $con = new DB();
