@@ -82,72 +82,19 @@
             <div class="container">
             <h2 class="section-title">Homes</h2>
             <div class="homes">
-                <div class="home">
-                    <img src="./img/home.png" alt="">
-                    <div class="detaills">
-                        <h3>Maison de familles</h3>
-                        <span class="adress"><i class="fa fa-map-marker-alt"></i> Maroc</span>
-                        <span class="surface"><i class="fa fa-square"></i> 230m²</span>
-                        <span class="rooms"><i class="fa fa-bed"></i> Chambres</span>
-                        <span class="price"><i class="fa fa-dollar-sign"></i> 50M MAD</span>
-                        <a href="#" class="btn-primary"><i class="fa fa-phone"></i> Contactez Agents</a>
+                <?php foreach($homes as $home){?>
+                    <div class="home">
+                        <img src="./img/home.png" alt="">
+                        <div class="detaills">
+                            <h3><?= $home->title ?></h3>
+                            <span class="adress"><i class="fa fa-map-marker-alt"></i> <?= $home->adress ?></span>
+                            <span class="surface"><i class="fa fa-square"></i> <?= $home->surface ?>m²</span>
+                            <span class="rooms"><i class="fa fa-bed"></i> <?= $home->rooms ?> Chambres</span>
+                            <span class="price"><i class="fa fa-dollar-sign"></i> <?= $home->price ?> MAD</span>
+                            <a href="/contact" class="btn-primary"><i class="fa fa-phone"></i> Contactez Agent</a>
+                        </div>
                     </div>
-                </div>
-                <div class="home">
-                    <img src="./img/home.png" alt="">
-                    <div class="detaills">
-                        <h3>Maison de familles</h3>
-                        <span class="adress"><i class="fa fa-map-marker-alt"></i> Maroc</span>
-                        <span class="surface"><i class="fa fa-square"></i> 230m²</span>
-                        <span class="rooms"><i class="fa fa-bed"></i> Chambres</span>
-                        <span class="price"><i class="fa fa-dollar-sign"></i> 50M MAD</span>
-                        <a href="#" class="btn-primary"><i class="fa fa-phone"></i> Contactez Agents</a>
-                    </div>
-                </div>
-                <div class="home">
-                    <img src="./img/home.png" alt="">
-                    <div class="detaills">
-                        <h3>Maison de familles</h3>
-                        <span class="adress"><i class="fa fa-map-marker-alt"></i> Maroc</span>
-                        <span class="surface"><i class="fa fa-square"></i> 230m²</span>
-                        <span class="rooms"><i class="fa fa-bed"></i> Chambres</span>
-                        <span class="price"><i class="fa fa-dollar-sign"></i> 50M MAD</span>
-                        <a href="#" class="btn-primary"><i class="fa fa-phone"></i> Contactez Agents</a>
-                    </div>
-                </div>
-                <div class="home">
-                    <img src="./img/home.png" alt="">
-                    <div class="detaills">
-                        <h3>Maison de familles</h3>
-                        <span class="adress"><i class="fa fa-map-marker-alt"></i> Maroc</span>
-                        <span class="surface"><i class="fa fa-square"></i> 230m²</span>
-                        <span class="rooms"><i class="fa fa-bed"></i> Chambres</span>
-                        <span class="price"><i class="fa fa-dollar-sign"></i> 50M MAD</span>
-                        <a href="#" class="btn-primary"><i class="fa fa-phone"></i> Contactez Agents</a>
-                    </div>
-                </div>
-                <div class="home">
-                    <img src="./img/home.png" alt="">
-                    <div class="detaills">
-                        <h3>Maison de familles</h3>
-                        <span class="adress"><i class="fa fa-map-marker-alt"></i> Maroc</span>
-                        <span class="surface"><i class="fa fa-square"></i> 230m²</span>
-                        <span class="rooms"><i class="fa fa-bed"></i> Chambres</span>
-                        <span class="price"><i class="fa fa-dollar-sign"></i> 50M MAD</span>
-                        <a href="#" class="btn-primary"><i class="fa fa-phone"></i> Contactez Agents</a>
-                    </div>
-                </div>
-                <div class="home">
-                    <img src="./img/home.png" alt="">
-                    <div class="detaills">
-                        <h3>Maison de familles</h3>
-                        <span class="adress"><i class="fa fa-map-marker-alt"></i> Maroc</span>
-                        <span class="surface"><i class="fa fa-square"></i> 230m²</span>
-                        <span class="rooms"><i class="fa fa-bed"></i> Chambres</span>
-                        <span class="price"><i class="fa fa-dollar-sign"></i> 50M MAD</span>
-                        <a href="#" class="btn-primary"><i class="fa fa-phone"></i> Contactez Agents</a>
-                    </div>
-                </div>
+                <?php } ?>
             </div>
             </div>
         </section>
