@@ -101,36 +101,11 @@
         <section id="gallery" >
             <div class="container-fluid">
                 <div class="gallery">
-                    <div class="imgbox">
-                        <img src="./img/g-1.png" alt="">
-                    </div>
-                    <div class="imgbox">
-                        <img src="./img/g-2.png" alt="">
-                    </div>
-                    <div class="imgbox">
-                        <img src="./img/g-3.png" alt="">
-                    </div>
-                    <div class="imgbox">
-                        <img src="./img/g-4.png" alt="">
-                    </div>
-                    <div class="imgbox">
-                        <img src="./img/g-5.png" alt="">
-                    </div>
-                    <div class="imgbox">
-                        <img src="./img/g-6.png" alt="">
-                    </div>
-                    <div class="imgbox">
-                        <img src="./img/g-7.png" alt="">
-                    </div>
-                    <div class="imgbox">
-                        <img src="./img/g-8.png" alt="">
-                    </div>
-                    <div class="imgbox">
-                        <img src="./img/g-9.png" alt="">
-                    </div>
-                    <div class="imgbox">
-                        <img src="./img/g-10.png" alt="">
-                    </div>
+                    <?php foreach($galleries as $gallery){?>
+                        <div class="imgbox">
+                            <img src="<?= $gallery->image->url?>" alt="<?= $gallery->image->alt_title?>">
+                        </div>
+                    <?php } ?>
                 </div>
             </div>
         </section>
