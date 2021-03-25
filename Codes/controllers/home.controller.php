@@ -6,7 +6,6 @@ require "./models/feature.model.php"; // features
 require "./models/partner.model.php"; // features
 require "./models/gallery.model.php"; // gallery
 require "./models/newslleter.model.php"; // newsletters
-include "../functions/functions.php";
 
 
 // instances 
