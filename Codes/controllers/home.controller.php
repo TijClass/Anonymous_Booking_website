@@ -19,7 +19,7 @@ $newsleter = new NewsLetter();//newsletter
 $top3Agents = $agent->getTop3(); // get Top 3 agents
 $homes = $hom->all(); // get all homes
 $features = $Feature->all();
-$partner = $Partner->all();
+$partners = $Partner->all();
 $galleries = $gallery->all();
 $newsletters = $newsleter->all();
 // get home view
