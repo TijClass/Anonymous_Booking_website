@@ -62,10 +62,9 @@
             <div class="container">
             <h2 class="section-title">Partners</h2>
             <div class="partners">
-                    <img src="./img/p-1.png" alt="">
-                    <img src="./img/p-2.png" alt="">
-                    <img src="./img/p-3.png" alt="">
-                    <img src="./img/p-4.png" alt="">
+                <?php foreach($partners as $partner){ ?>
+                    <img src="<?= $partner->image->url ?>" alt="<?= $partner->image->alt_title ?>">
+                <?php } ?>
             </div>
             </div>
         </section>
