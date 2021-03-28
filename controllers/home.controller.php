@@ -14,7 +14,7 @@ $hom = new Home(); // Home
 $Feature = new Feature(); // Feature
 $Partner = new Partner(); // Feature
 $gallery = new Gallery(); // Gallery
-$newsleter = new NewsLetter();//newsletter
+$newsleter = new NewsLetter();//newsletter 
 
 $top3Agents = $agent->getTop3(); // get Top 3 agents
 $homes = $hom->all(); // get all homes
