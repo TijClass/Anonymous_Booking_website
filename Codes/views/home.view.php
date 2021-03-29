@@ -18,7 +18,7 @@
                 <li><a href="#">Plan</a></li>
                 <li><a href="#">Soumettez votre propriété</a></li>
                 <li><a href="#">Nous rejoindre</a></li>
-                <li><a href="#">Contactez-nous</a></li>
+                <li><a href="/contact">Contactez-nous</a></li>
             </ul>
         </div>
     </nav>
@@ -33,18 +33,12 @@
                 <i class="fa fa-crown"></i>
                 <small>Top 3 agents</small>
                 <div class="top-agent">
-                    <div class="agent">
-                        <img src="./img/a-1.png" alt="">
-                        <span>Agent name</span>
-                    </div>
-                    <div class="agent">
-                        <img src="./img/a-2.png" alt="">
-                        <span>Agent name</span>
-                    </div>
-                    <div class="agent">
-                        <img src="./img/a-3.png" alt="">
-                        <span>Agent name</span>
-                    </div>
+                    <?php foreach($top3Agents as $agent){?>
+                        <div class="agent">
+                            <img src="<?= $agent->image->url ?>" alt="<?= $agent->image->alt_title ?>">
+                            <span><?= $agent->name ?></span>
+                        </div>
+                    <?php } ?>
                 </div>
             </div>
         </div>
@@ -54,36 +48,13 @@
                 <div class="container">
                     <h2 class="section-title">Features</h2>
                     <div class="features">
-                        <div class="feature">
-                            <i class="fa fa-globe"></i>
-                            <h3>Meilleurs choix des maisons</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                        </div>
-                        <div class="feature">
-                            <i class="fa fa-trophy"></i>
-                            <h3>Les meilleurs terrains</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                        </div>
-                        <div class="feature">
-                            <i class="fa fa-map-marker-alt"></i>
-                            <h3>Emplacement de reves</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                        </div>
-                        <div class="feature">
-                            <i class="fa fa-lock"></i>
-                            <h3>Payement sécurisé</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                        </div>
-                        <div class="feature">
-                            <i class="fa fa-chart-line"></i>
-                            <h3>Top Agents</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                        </div>
-                        <div class="feature">
-                            <i class="fa fa-key"></i>
-                            <h3>Des maisons à portée</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                        </div>
+                        <?php foreach($features as $feature){?>
+                            <div class="feature">
+                                <i class="fa fa-globe"></i>
+                                <h3><?= $feature->title ?></h3>
+                                <p><?= $feature->description ?></p>
+                            </div>
+                        <?php } ?>
                     </div>
                 </div>
         </section>
@@ -91,10 +62,9 @@
             <div class="container">
             <h2 class="section-title">Partners</h2>
             <div class="partners">
-                    <img src="./img/p-1.png" alt="">
-                    <img src="./img/p-2.png" alt="">
-                    <img src="./img/p-3.png" alt="">
-                    <img src="./img/p-4.png" alt="">
+                <?php foreach($partners as $partner){ ?>
+                    <img src="<?= $partner->image->url ?>" alt="<?= $partner->image->alt_title ?>">
+                <?php } ?>
             </div>
             </div>
         </section>
@@ -112,108 +82,30 @@
             <div class="container">
             <h2 class="section-title">Homes</h2>
             <div class="homes">
-                <div class="home">
-                    <img src="./img/home.png" alt="">
-                    <div class="detaills">
-                        <h3>Maison de familles</h3>
-                        <span class="adress"><i class="fa fa-map-marker-alt"></i> Maroc</span>
-                        <span class="surface"><i class="fa fa-square"></i> 230m²</span>
-                        <span class="rooms"><i class="fa fa-bed"></i> Chambres</span>
-                        <span class="price"><i class="fa fa-dollar-sign"></i> 50M MAD</span>
-                        <a href="#" class="btn-primary"><i class="fa fa-phone"></i> Contactez Agents</a>
+                <?php foreach($homes as $home){?>
+                    <div class="home">
+                        <img src="./img/home.png" alt="">
+                        <div class="detaills">
+                            <h3><?= $home->title ?></h3>
+                            <span class="adress"><i class="fa fa-map-marker-alt"></i> <?= $home->adress ?></span>
+                            <span class="surface"><i class="fa fa-square"></i> <?= $home->surface ?>m²</span>
+                            <span class="rooms"><i class="fa fa-bed"></i> <?= $home->rooms ?> Chambres</span>
+                            <span class="price"><i class="fa fa-dollar-sign"></i> <?= $home->price ?> MAD</span>
+                            <a href="/contact" class="btn-primary"><i class="fa fa-phone"></i> Contactez Agent</a>
+                        </div>
                     </div>
-                </div>
-                <div class="home">
-                    <img src="./img/home.png" alt="">
-                    <div class="detaills">
-                        <h3>Maison de familles</h3>
-                        <span class="adress"><i class="fa fa-map-marker-alt"></i> Maroc</span>
-                        <span class="surface"><i class="fa fa-square"></i> 230m²</span>
-                        <span class="rooms"><i class="fa fa-bed"></i> Chambres</span>
-                        <span class="price"><i class="fa fa-dollar-sign"></i> 50M MAD</span>
-                        <a href="#" class="btn-primary"><i class="fa fa-phone"></i> Contactez Agents</a>
-                    </div>
-                </div>
-                <div class="home">
-                    <img src="./img/home.png" alt="">
-                    <div class="detaills">
-                        <h3>Maison de familles</h3>
-                        <span class="adress"><i class="fa fa-map-marker-alt"></i> Maroc</span>
-                        <span class="surface"><i class="fa fa-square"></i> 230m²</span>
-                        <span class="rooms"><i class="fa fa-bed"></i> Chambres</span>
-                        <span class="price"><i class="fa fa-dollar-sign"></i> 50M MAD</span>
-                        <a href="#" class="btn-primary"><i class="fa fa-phone"></i> Contactez Agents</a>
-                    </div>
-                </div>
-                <div class="home">
-                    <img src="./img/home.png" alt="">
-                    <div class="detaills">
-                        <h3>Maison de familles</h3>
-                        <span class="adress"><i class="fa fa-map-marker-alt"></i> Maroc</span>
-                        <span class="surface"><i class="fa fa-square"></i> 230m²</span>
-                        <span class="rooms"><i class="fa fa-bed"></i> Chambres</span>
-                        <span class="price"><i class="fa fa-dollar-sign"></i> 50M MAD</span>
-                        <a href="#" class="btn-primary"><i class="fa fa-phone"></i> Contactez Agents</a>
-                    </div>
-                </div>
-                <div class="home">
-                    <img src="./img/home.png" alt="">
-                    <div class="detaills">
-                        <h3>Maison de familles</h3>
-                        <span class="adress"><i class="fa fa-map-marker-alt"></i> Maroc</span>
-                        <span class="surface"><i class="fa fa-square"></i> 230m²</span>
-                        <span class="rooms"><i class="fa fa-bed"></i> Chambres</span>
-                        <span class="price"><i class="fa fa-dollar-sign"></i> 50M MAD</span>
-                        <a href="#" class="btn-primary"><i class="fa fa-phone"></i> Contactez Agents</a>
-                    </div>
-                </div>
-                <div class="home">
-                    <img src="./img/home.png" alt="">
-                    <div class="detaills">
-                        <h3>Maison de familles</h3>
-                        <span class="adress"><i class="fa fa-map-marker-alt"></i> Maroc</span>
-                        <span class="surface"><i class="fa fa-square"></i> 230m²</span>
-                        <span class="rooms"><i class="fa fa-bed"></i> Chambres</span>
-                        <span class="price"><i class="fa fa-dollar-sign"></i> 50M MAD</span>
-                        <a href="#" class="btn-primary"><i class="fa fa-phone"></i> Contactez Agents</a>
-                    </div>
-                </div>
+                <?php } ?>
             </div>
             </div>
         </section>
         <section id="gallery" >
             <div class="container-fluid">
                 <div class="gallery">
-                    <div class="imgbox">
-                        <img src="./img/g-1.png" alt="">
-                    </div>
-                    <div class="imgbox">
-                        <img src="./img/g-2.png" alt="">
-                    </div>
-                    <div class="imgbox">
-                        <img src="./img/g-3.png" alt="">
-                    </div>
-                    <div class="imgbox">
-                        <img src="./img/g-4.png" alt="">
-                    </div>
-                    <div class="imgbox">
-                        <img src="./img/g-5.png" alt="">
-                    </div>
-                    <div class="imgbox">
-                        <img src="./img/g-6.png" alt="">
-                    </div>
-                    <div class="imgbox">
-                        <img src="./img/g-7.png" alt="">
-                    </div>
-                    <div class="imgbox">
-                        <img src="./img/g-8.png" alt="">
-                    </div>
-                    <div class="imgbox">
-                        <img src="./img/g-9.png" alt="">
-                    </div>
-                    <div class="imgbox">
-                        <img src="./img/g-10.png" alt="">
-                    </div>
+                    <?php foreach($galleries as $gallery){?>
+                        <div class="imgbox">
+                            <img src="<?= $gallery->image->url?>" alt="<?= $gallery->image->alt_title?>">
+                        </div>
+                    <?php } ?>
                 </div>
             </div>
         </section>
@@ -222,9 +114,9 @@
     <section class="footer-one">
         <div class="container">
             <img src="./img/logo-colored.png" alt="">
-            <form action="">
+            <form action="/newsletter" method="POST">
                 <i class="fa fa-envelope-open-text"></i>
-                <input type="email" name="email" id="email" placeholder="Email...">
+                <input type="email" name="email" id="email" required placeholder="Email...">
                 <button type="submit" class="btn-primary">Subscribe</button>
             </form>
         </div>
