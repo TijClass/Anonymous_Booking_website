@@ -428,7 +428,8 @@ header {
     margin: auto;
     margin-top: 15vh;
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    position: relative; }
     #modal .modal .left {
       width: 40%;
       display: flex;
@@ -456,6 +457,23 @@ header {
         font-size: .8rem; }
       #modal .modal .right a {
         margin: 0; }
+    #modal .modal #close-modal {
+      position: absolute;
+      right: -10px;
+      top: -10px;
+      width: 25px;
+      height: 25px;
+      background-color: #f9f7f6;
+      border-radius: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid #F9B90F;
+      box-shadow: rgba(0, 0, 0, 0.322) -2px 3px 6px;
+      transition: .3s; }
+      #modal .modal #close-modal:hover {
+        background-color: #F9B90F;
+        color: #f9f7f6; }
 
 .footer-one {
   padding: 16px 0px;

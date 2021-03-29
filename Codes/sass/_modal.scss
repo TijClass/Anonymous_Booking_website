@@ -17,6 +17,7 @@
         margin-top: 15vh;
         display: flex;
         flex-direction: row;
+        position: relative;
         .left{
             width: 40%;
             display: flex;
@@ -49,6 +50,25 @@
             }
             a{
                 margin: 0;
+            }
+        }
+        #close-modal{
+            position: absolute;
+            right: -10px;
+            top: -10px;
+            width: 25px;
+            height: 25px;
+            background-color: $color-grey-light-1;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid $color-primary;
+            box-shadow: rgba(0, 0, 0, 0.322) -2px 3px 6px;
+            transition: .3s;
+            &:hover{
+                background-color: $color-primary;
+                color: $color-grey-light-1;
             }
         }
     }
