@@ -16,10 +16,14 @@ class Agent{
     // get Top 3 agents
     public function getTop3(){
         $con = new DB();
+        $Images = new Images();
         $con->prepare("SELECT name,images_id FROM agents ORDER BY score DESC LIMIT 3");
         if($con->execute()){
-            $agent = $con->fetchAll("OBJ"); 
-            return $agent;
+            $Top3agents = $con->fetchAll("OBJ"); 
+            foreach($Top3agents as $key=>$agent){
+                $Top3agents[$key]->image = $Images->get($agent->images_id);
+            }
+            return $Top3agents;
         }else{
             return false;
         }
