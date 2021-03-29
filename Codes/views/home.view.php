@@ -50,7 +50,7 @@
                     <div class="features">
                         <?php foreach($features as $feature){?>
                             <div class="feature">
-                                <i class="fa fa-globe"></i>
+                                <i class="<?= $feature->icon ?>"></i>
                                 <h3><?= $feature->title ?></h3>
                                 <p><?= $feature->description ?></p>
                             </div>
