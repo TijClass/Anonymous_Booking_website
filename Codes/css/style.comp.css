@@ -366,6 +366,92 @@ header {
     width: 100%;
     height: 100%; }
 
+.contact form {
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap; }
+  .contact form .form-group {
+    padding: 8px; }
+    .contact form .form-group .form-control {
+      width: 100%;
+      border: 1px solid #73A1C2;
+      border-radius: 5px;
+      margin: 0px 8px;
+      padding-left: 8px;
+      height: 40px;
+      color: #0A84FF; }
+    .contact form .form-group.full-name {
+      width: 50%; }
+    .contact form .form-group.email {
+      width: 50%; }
+    .contact form .form-group.message {
+      width: 100%; }
+      .contact form .form-group.message .form-control {
+        padding-top: 8px;
+        min-height: 150px; }
+    .contact form .form-group.type {
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+      .contact form .form-group.type > div {
+        display: flex;
+        align-items: center; }
+      .contact form .form-group.type .form-control {
+        width: auto; }
+    .contact form .form-group.send {
+      width: 100%; }
+      .contact form .form-group.send .btn-primary {
+        border: none;
+        padding: 15px 32px;
+        min-width: 200px; }
+
+#modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none; }
+  #modal.show {
+    display: block; }
+  #modal .modal {
+    width: 70%;
+    background-color: #f9f7f6;
+    margin: auto;
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: row; }
+    #modal .modal .left {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      border-radius: 0;
+      max-height: 100%; }
+      #modal .modal .left img {
+        max-height: 50%; }
+    #modal .modal .right {
+      padding: 16px 32px;
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start; }
+      #modal .modal .right h3 {
+        color: #F9B90F;
+        font-weight: bold;
+        font-size: 3rem;
+        margin: 0; }
+      #modal .modal .right small {
+        color: #0A84FF;
+        font-size: 1.5rem; }
+      #modal .modal .right p {
+        font-size: .8rem; }
+      #modal .modal .right a {
+        margin: 0; }
+
 .footer-one {
   padding: 16px 0px;
   background-color: #d7e2ec; }

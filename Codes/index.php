@@ -19,7 +19,7 @@ $router->get("/contact", function ($request) {
     // check for auth
     // include "./middleware/auth.middleware.php";
     // get home controller
-    // include "./controllers/contact.controller.php";
+    include "./controllers/contact.controller.php";
 });
 $router->get("/route/:id",function ($request) {
     
