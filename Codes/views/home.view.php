@@ -83,8 +83,8 @@
             <h2 class="section-title">Homes</h2>
             <div class="homes">
                 <?php foreach($homes as $home){?>
-                    <div class="home">
-                        <img src="./img/home.png" alt="">
+                    <div class="home">                        
+                        <img src="<?=$home->thumbnail->url?>" alt="">
                         <div class="detaills">
                             <h3><?= $home->title ?></h3>
                             <span class="adress"><i class="fa fa-map-marker-alt"></i> <?= $home->adress ?></span>
