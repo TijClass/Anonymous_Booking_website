@@ -50,7 +50,7 @@
                     <div class="features">
                         <?php foreach($features as $feature){?>
                             <div class="feature">
-                                <i class="fa fa-globe"></i>
+                                <i class="<?= $feature->icon ?>"></i>
                                 <h3><?= $feature->title ?></h3>
                                 <p><?= $feature->description ?></p>
                             </div>
@@ -74,7 +74,7 @@
                     <h2>STORY_clients and book</h2>
                     <small>Client Heureux</small>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam vero rerum tenetur architecto dignissimos quia voluptas necessitatibus iusto obcaecati mollitia explicabo modi temporibus accusamus nam, quo maiores reiciendis distinctio. Id.</p>
-                    <a href="#" class="btn-primary">Book with me</a>
+                    <a id="book-with-me" class="btn-primary">Book with me</a>
                 </div>
             </div>
         </section>
@@ -83,8 +83,8 @@
             <h2 class="section-title">Homes</h2>
             <div class="homes">
                 <?php foreach($homes as $home){?>
-                    <div class="home">
-                        <img src="./img/home.png" alt="">
+                    <div class="home">                        
+                        <img src="<?=$home->thumbnail->url?>" alt="">
                         <div class="detaills">
                             <h3><?= $home->title ?></h3>
                             <span class="adress"><i class="fa fa-map-marker-alt"></i> <?= $home->adress ?></span>
@@ -138,6 +138,7 @@
     <!-- Modal -->
     <div id="modal">
         <div class="modal">
+        <i class="fas fa-times" id="close-modal"></i>
             <div class="left">
                 <img src="./img/modal-1.png" alt="">
                 <img src="./img/modal-2.png" alt="">
@@ -151,7 +152,6 @@
             </div>
         </div>
     </div>
-
-
+    <script src="./js/main.js"></script>
 </body>
 </html>
